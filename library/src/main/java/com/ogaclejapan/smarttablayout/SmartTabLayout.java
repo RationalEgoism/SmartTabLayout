@@ -413,7 +413,7 @@ public class SmartTabLayout extends HorizontalScrollView {
     }
   }
 
-  private void scrollToTab(int tabIndex, float positionOffset) {
+  public void scrollToTab(int tabIndex, float positionOffset) {
     final int tabStripChildCount = tabStrip.getChildCount();
     if (tabStripChildCount == 0 || tabIndex < 0 || tabIndex >= tabStripChildCount) {
       return;
